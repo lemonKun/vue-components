@@ -1,5 +1,12 @@
 <template>
     <div>
-        我是App组件
+        <Examples></Examples>
     </div>
 </template>
+
+<script>
+import Examples from './examples/examples';
+export default {    
+    components: {Examples}
+}
+</script>

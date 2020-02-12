@@ -23,5 +23,5 @@ vue serve
 
 ## 参考链接：
 
-[基于vue-cli3快速原型开发]: https://cli.vuejs.org/zh/guide/prototyping.html	"快速原型开发"
+[基于vue-cli3快速原型开发](https://cli.vuejs.org/zh/guide/prototyping.html "快速原型开发")
 
