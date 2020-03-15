@@ -1,11 +1,16 @@
 <template>
     <div>
         <Menu :data="menuData"></Menu>
+        <button @click="show">点击弹出信息</button>
     </div>
 </template>
 
 <script>
+import Vue from 'vue';
 import Menu from '../components/menu/menu';
+// import {Message} from '../components/message/message.js';
+import CzUi from '../components/message/message.js';
+Vue.use(CzUi);
 export default {
     components: {Menu},
     data() {
@@ -39,6 +44,18 @@ export default {
                 }
             ]
         };
+    },
+    methods: {
+        show() {
+            // Message.success({
+            //     duration: 3000,
+            //     message: '你好呀，成功啦'
+            // })
+            this.$message.success({
+                duration: 2000,
+                message:'你好呀，我是this调用的成功'
+            })
+        }
     }
 }
 </script>
