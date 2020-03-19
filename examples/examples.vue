@@ -2,6 +2,7 @@
     <div>
         <Menu :data="menuData"></Menu>
         <button @click="show">点击弹出信息</button>
+        <Form></Form>
     </div>
 </template>
 
@@ -10,9 +11,10 @@ import Vue from 'vue';
 import Menu from '../components/menu/menu';
 // import {Message} from '../components/message/message.js';
 import CzUi from '../components/message/message.js';
+import Form from '../components/form/form';
 Vue.use(CzUi);
 export default {
-    components: {Menu},
+    components: {Menu, Form},
     data() {
         return {
             menuData: [

@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/lemonKun/vue-components/issues"
   },
-  "homepage": "https://github.com/lemonKun/vue-components#readme"
+  "homepage": "https://github.com/lemonKun/vue-components#readme",
+  "dependencies": {
+    "async-validator": "^3.2.4"
+  }
 }

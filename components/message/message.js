@@ -23,7 +23,7 @@ export {
 }
 export default {
     //在调用Vue.use方法时，会默认调用install方法
-    install(_Vue) {
+    install() {
         let $message = {};
         Object.keys(Message).forEach(key =>{
             $message[key] = Message[key];
