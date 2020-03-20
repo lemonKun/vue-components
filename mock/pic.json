@@ -1,0 +1,13 @@
+{
+    "code": 200,
+    "success": true,
+    "result": {
+        "list": ["https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld", "https://dummyimage.com/400x400/cccccc/0011ff.png&text=pic2",
+        "https://dummyimage.com/400x400/dedede/0011ff.png&text=pic2", "https://dummyimage.com/400x400/dedede/0011ff.png&text=picpicpic", 
+        "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld", "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld", "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld"
+        , "https://dummyimage.com/400x400/yellow/0011ff.png&text=dasd", "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld", "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld", "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld"
+        ,"https://dummyimage.com/400x400/yellow/0011ff.png&text=至安徽的", "https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld","https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld","https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld",
+        "https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld","https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld","https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld",
+        "https://dummyimage.com/400x400/00ff00/0011ff.png&text=HelloWorld","https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld", "https://dummyimage.com/400x400/yellow/0011ff.png&text=HelloWorld"]
+    }
+}

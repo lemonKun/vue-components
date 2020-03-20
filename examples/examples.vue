@@ -3,6 +3,11 @@
         <Menu :data="menuData"></Menu>
         <button @click="show">点击弹出信息</button>
         <Form></Form>
+        <ul class="box">
+            <li v-for="(item, index) in imgList" :key="index">
+                <img v-lazy="item" alt="图片显示错误">
+            </li>
+        </ul>
     </div>
 </template>
 
@@ -13,10 +18,18 @@ import Menu from '../components/menu/menu';
 import CzUi from '../components/message/message.js';
 import Form from '../components/form/form';
 Vue.use(CzUi);
+
+import axios from 'axios';
+
 export default {
     components: {Menu, Form},
+    async created() {
+        let {data} = await axios.get('http://www.personal.com/getList');
+        this.imgList = data.data.list;
+    },
     data() {
         return {
+            imgList:[],
             menuData: [
                 {
                     name: '导航一',
@@ -61,3 +74,18 @@ export default {
     }
 }
 </script>
+<style>
+.box {
+    width: 180px;
+    height: 400px;
+    overflow: scroll;
+}
+.box li {
+    width: 100px;
+    height: 100px;
+}
+.box img{
+    width: 100px;
+    height: 100px;
+}
+</style>
