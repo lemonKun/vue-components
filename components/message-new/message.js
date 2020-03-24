@@ -28,10 +28,6 @@ export {Message};
 export default {
     //在调用Vue.use方法时，会默认调用install方法
     install() {
-        let $message = {};
-        ['warning', 'success', 'error'].forEach(type => {
-            $message[type] =  Message[type];
-        })
-        Vue.prototype.$message = $message;
+        Vue.prototype.$message = Message;
     }
 }
