@@ -12,12 +12,16 @@
 </template>
 
 <script>
+/*eslint-disable */
 import Vue from 'vue';
 import Menu from '../components/menu/menu';
 // import {Message} from '../components/message/message.js';
-import CzUi from '../components/message/message.js';
+// import CzUi from '../components/message/message.js';
 import Form from '../components/form/form';
-Vue.use(CzUi);
+// Vue.use(CzUi);
+
+import {Message} from '../components/message-new/message.js';
+// Vue.use(Message);
 
 import axios from 'axios';
 
@@ -62,14 +66,15 @@ export default {
     },
     methods: {
         show() {
-            // Message.success({
-            //     duration: 3000,
-            //     message: '你好呀，成功啦'
-            // })
-            this.$message.success({
-                duration: 2000,
-                message:'你好呀，我是this调用的成功'
+            Message.success({
+                duration: 3000,
+                message: '你好呀，成功啦'
             })
+            // Message({type: 'success', duration: 1000, message: '你好'});
+            // this.$message.success({
+            //     duration: 2000,
+            //     message:'你好呀，我是this调用的成功'
+            // })
         }
     }
 }
