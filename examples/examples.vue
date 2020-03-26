@@ -8,6 +8,8 @@
                 <img v-lazy="item" alt="图片显示错误">
             </li>
         </ul>
+        <hr>
+        <menu-jsx :data="menuData"></menu-jsx>
     </div>
 </template>
 
@@ -15,6 +17,8 @@
 /*eslint-disable */
 import Vue from 'vue';
 import Menu from '../components/menu/menu';
+import MenuJsx from '../components/menu-jsx/menujsx.js';
+
 // import {Message} from '../components/message/message.js';
 // import CzUi from '../components/message/message.js';
 import Form from '../components/form/form';
@@ -26,7 +30,7 @@ import {Message} from '../components/message-new/message.js';
 import axios from 'axios';
 
 export default {
-    components: {Menu, Form},
+    components: {Menu, Form, MenuJsx},
     async created() {
         let {data} = await axios.get('http://www.personal.com/getList');
         this.imgList = data.data.list;
